@@ -12,7 +12,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo" onclick="scrollToSection('hero')">
-                    <h1>Nirmala Nurfadillah</h1>
+                    <h1 data-i18n="hero.name">Nirmala Nurfadillah</h1>
                 </div>
 
                 <!-- Desktop Navigation -->
@@ -22,6 +22,14 @@
                     <button onclick="scrollToSection('projects')">Projects</button>
                     <button onclick="scrollToSection('experience')">Experience</button>
                     <button onclick="scrollToSection('contact')">Contact</button>
+                </nav>
+
+                <nav class="lang-switcher">
+                    <label for="lang" class="visually-hidden">Pilih Bahasa</label>
+                    <select id="lang" aria-label="Pilih Bahasa">
+                        <option value="id">Indonesia</option>
+                        <option value="en">English</option>
+                    </select>
                 </nav>
 
                 <div class="header-actions">
@@ -78,8 +86,8 @@
                         <div class="hero-intro">
                             <p class="greeting">Hello, I'm</p>
                             <h1 class="name">Nirmala Nurfadillah</h1>
-                            <h2 class="title">Student</h2>
-                            <p class="description">
+                            <h2 class="title" data-i18n="hero.role">Student</h2>
+                            <p class="description" data-i18n="hero.summary">
                                 A Computer Science student at Universitas Teknokrat Indonesia who is 
                                 dedicated to software development and digital technology. Possesses a 
                                 strong understanding of data structures, programming logic, and system 
@@ -90,10 +98,10 @@
                         </div>
 
                         <div class="hero-buttons">
-                            <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                            <button class="btn btn-primary" onclick="scrollToSection('projects')" data-i18n="cta.viewWork">
                                 View My Work
                             </button>
-                            <button class="btn btn-outline" onclick="scrollToSection('contact')">
+                            <button class="btn btn-outline" onclick="scrollToSection('contact')" data-i18n="cta.contact">
                                 Get In Touch
                             </button>
                         </div>
@@ -147,26 +155,24 @@
         <section id="about" class="about-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>About Me</h2>
+                    <h2 data-i18n="about.title">About Me</h2>
                     <p>Get to know more about my background, experience, and what drives my passion for development.</p>
                 </div>
 
                 <div class="about-grid">
                     <div class="about-content">
                         <div class="about-story">
-                            <h3>My Story</h3>
+                            <h3 data-i18n="about.storyTitle">My Story</h3>
                             <div class="story-text">
-                                <p>
+                                <p data-i18n="about.storyBody">
                                     I am a student in the Computer Science program at Universitas Teknokrat Indonesia
                                     who is passionate about software development and digital technology. My academic journey 
                                     on campus has strengthened my fundamental understanding through in-depth exploration of
-                                    data structures, programming logic, and efficient system design.
-                                </p>
-                                <p>
+                                    data structures, programming logic, and efficient system design.<br>
+
                                     I have a particular interest in web development and database management, and I am always
-                                    eager to explore new tools and frameworks.
-                                </p>
-                                <p>
+                                    eager to explore new tools and frameworks.<br>
+
                                     I believe that consistent learning, structured coding, and a thorough understanding
                                     of concepts are essential foundations for creating useful digital solutions.
                                 </p>
@@ -190,30 +196,10 @@
                     <div class="stats-grid">
                         <div class="stat-card">
                             <svg class="stat-icon" fill="currentColor" viewBox="0 0 24 24">
-                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                                <line x1="16" y1="2" x2="16" y2="6"/>
-                                <line x1="8" y1="2" x2="8" y2="6"/>
-                                <line x1="3" y1="10" x2="21" y2="10"/>
-                            </svg>
-                            <p class="stat-value">5+</p>
-                            <p class="stat-label">Years Experience</p>
-                        </div>
-                        <div class="stat-card">
-                            <svg class="stat-icon" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M6 9l6 6 6-6"/>
                             </svg>
-                            <p class="stat-value">50+</p>
+                            <p class="stat-value">1</p>
                             <p class="stat-label">Projects Completed</p>
-                        </div>
-                        <div class="stat-card">
-                            <svg class="stat-icon" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                <circle cx="9" cy="7" r="4"/>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                            </svg>
-                            <p class="stat-value">30+</p>
-                            <p class="stat-label">Happy Clients</p>
                         </div>
                         <div class="stat-card">
                             <svg class="stat-icon" fill="currentColor" viewBox="0 0 24 24">
@@ -243,7 +229,7 @@
                             <div class="skills-list">
                                 <div class="skill-item">
                                     <div class="skill-header">
-                                        <span>React/Next.js</span>
+                                        <span>HTML</span>
                                         <span>95%</span>
                                     </div>
                                     <div class="progress-bar">
@@ -252,29 +238,11 @@
                                 </div>
                                 <div class="skill-item">
                                     <div class="skill-header">
-                                        <span>TypeScript</span>
+                                        <span>CSS</span>
                                         <span>90%</span>
                                     </div>
                                     <div class="progress-bar">
                                         <div class="progress-fill" style="width: 90%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-header">
-                                        <span>Tailwind CSS</span>
-                                        <span>88%</span>
-                                    </div>
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" style="width: 88%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-header">
-                                        <span>Vue.js</span>
-                                        <span>75%</span>
-                                    </div>
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" style="width: 75%"></div>
                                     </div>
                                 </div>
                             </div>
@@ -287,82 +255,11 @@
                             <div class="skills-list">
                                 <div class="skill-item">
                                     <div class="skill-header">
-                                        <span>Node.js</span>
-                                        <span>92%</span>
-                                    </div>
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" style="width: 92%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-header">
                                         <span>Python</span>
                                         <span>85%</span>
                                     </div>
                                     <div class="progress-bar">
                                         <div class="progress-fill" style="width: 85%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-header">
-                                        <span>PostgreSQL</span>
-                                        <span>88%</span>
-                                    </div>
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" style="width: 88%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-header">
-                                        <span>MongoDB</span>
-                                        <span>82%</span>
-                                    </div>
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" style="width: 82%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="skill-card">
-                            <h3>DevOps & Cloud</h3>
-                            <div class="skills-list">
-                                <div class="skill-item">
-                                    <div class="skill-header">
-                                        <span>AWS</span>
-                                        <span>86%</span>
-                                    </div>
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" style="width: 86%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-header">
-                                        <span>Docker</span>
-                                        <span>84%</span>
-                                    </div>
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" style="width: 84%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-header">
-                                        <span>CI/CD</span>
-                                        <span>80%</span>
-                                    </div>
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" style="width: 80%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-header">
-                                        <span>Kubernetes</span>
-                                        <span>70%</span>
-                                    </div>
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" style="width: 70%"></div>
                                     </div>
                                 </div>
                             </div>
@@ -375,14 +272,7 @@
                     <div class="tools-tags">
                         <span class="tool-tag">VS Code</span>
                         <span class="tool-tag">Git</span>
-                        <span class="tool-tag">Figma</span>
-                        <span class="tool-tag">Postman</span>
-                        <span class="tool-tag">Jira</span>
-                        <span class="tool-tag">Slack</span>
-                        <span class="tool-tag">Vercel</span>
-                        <span class="tool-tag">Netlify</span>
-                        <span class="tool-tag">Firebase</span>
-                        <span class="tool-tag">Supabase</span>
+                        <span class="tool-tag">Google Colab</span>
                     </div>
                 </div>
             </div>
@@ -399,7 +289,7 @@
                 <div class="projects-grid">
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1658297063569-162817482fb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxlY29tbWVyY2UlMjB3ZWJzaXRlfGVufDF8fHx8MTc1NTQ3ODMxNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="E-Commerce Platform" class="project-img">
+                            <img src="https://images.pexels.com/photos/27219511/pexels-photo-27219511.jpeg" alt="Guess Number" class="project-img">
                             <div class="project-overlay">
                                 <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
                                     <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
@@ -418,84 +308,15 @@
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3>E-Commerce Platform</h3>
-                            <p>A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, and order processing.</p>
+                            <h3>Guess Number</h3>
+                            <p>A simple data structure game designed to sharpen our logical thinking 
+                                skills by guessing a secret number as efficiently as possible in order 
+                                to be the best</p>
                             <div class="project-tags">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">MongoDB</span>
-                                <span class="tech-tag">Stripe</span>
-                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">HTML</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1554306274-f23873d9a26c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzU1NTgxOTUwfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Task Management App" class="project-img">
-                            <div class="project-overlay">
-                                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                        <polyline points="15,3 21,3 21,9"/>
-                                        <line x1="10" y1="14" x2="21" y2="3"/>
-                                    </svg>
-                                    Live Demo
-                                </a>
-                                <a href="https://github.com/fadillahnirmala/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                    Code
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Task Management App</h3>
-                            <p>A collaborative task management application with real-time updates, team collaboration features, and advanced project tracking capabilities.</p>
-                            <div class="project-tags">
-                                <span class="tech-tag">Next.js</span>
-                                <span class="tech-tag">TypeScript</span>
-                                <span class="tech-tag">Prisma</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">Socket.io</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1597740985671-2a8a3b80502e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzU1NTE2ODEzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Mobile Fitness App" class="project-img">
-                            <div class="project-overlay">
-                                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                        <polyline points="15,3 21,3 21,9"/>
-                                        <line x1="10" y1="14" x2="21" y2="3"/>
-                                    </svg>
-                                    Live Demo
-                                </a>
-                                <a href="https://github.com/fadillahnirmala/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                    Code
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Mobile Fitness App</h3>
-                            <p>A React Native fitness tracking app with workout plans, progress tracking, and social features. Includes integration with health APIs and wearable devices.</p>
-                            <div class="project-tags">
-                                <span class="tech-tag">React Native</span>
-                                <span class="tech-tag">Firebase</span>
-                                <span class="tech-tag">Redux</span>
-                                <span class="tech-tag">Health API</span>
-                                <span class="tech-tag">Push Notifications</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="projects-cta">
                     <a href="https://github.com/fadillahnirmala/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
@@ -890,6 +711,224 @@
             } else {
                 sunIcon.style.display = 'none';
                 moonIcon.style.display = 'block';
+            }
+        });
+
+        // Kamus terjemahan
+        const i18n = {
+            id: {
+            "hero.name": "Nirmala Nurfadillah",
+            "hero.role": "Mahasiswa",
+            "hero.summary": "Mahasiswa Ilmu Komputer di Universitas Teknokrat Indonesia yang berdedikasi pada pengembangan perangkat lunak dan teknologi digital. Memiliki pemahaman yang kuat tentang struktur data, logika pemrograman, dan desain sistem, dengan ketertarikan khusus pada pengembangan web dan manajemen basis data. Selalu antusias mempelajari framework baru dan berkomitmen menciptakan solusi digital bermanfaat melalui clean code dan pembelajaran konsisten.",
+            "cta.viewWork": "Lihat Karya",
+            "cta.contact": "Hubungi Saya",
+
+            "about.title": "Tentang Saya",
+            "about.storyTitle": "Perjalanan Saya",
+            "about.storyBody": "Saya adalah mahasiswa Program Studi Informatika di Universitas Teknokrat Indonesia yang antusias pada pengembangan perangkat lunak dan teknologi digital. Perjalanan akademik saya memperkuat fondasi melalui eksplorasi mendalam struktur data, logika pemrograman, dan perancangan sistem yang efisien. Saya memiliki ketertarikan pada pengembangan web dan manajemen basis data, serta senang mengeksplorasi tools dan framework baru. Saya percaya belajar konsisten, penulisan kode yang terstruktur, dan pemahaman konsep yang menyeluruh adalah dasar untuk menciptakan solusi digital yang bermanfaat.",
+            "about.interestsTitle": "Minat & Ketertarikan",
+            "about.interests.webdev": "Pengembangan Web",
+            "about.interests.dsa": "Struktur Data & Algoritma",
+            "about.interests.ds": "Data Science",
+            "about.interests.viz": "Visualisasi Data",
+            "about.interests.uiux": "Desain UI/UX",
+            "about.interests.cloud": "Komputasi Awan",
+            "about.interests.db": "Sistem Basis Data",
+
+            "skills.title": "Keahlian",
+            "skills.frontend": "Pengembangan Frontend",
+            "skills.html": "HTML",
+            "skills.css": "CSS",
+            "skills.backend": "Pengembangan Backend",
+            "skills.python": "Python",
+            "skills.tools": "Tools & Teknologi",
+            "skills.vscode": "VS Code",
+            "skills.git": "Git",
+            "skills.colab": "Google Colab",
+
+            "projects.title": "Proyek Unggulan",
+            "projects.guessNumber.desc": "Game struktur data sederhana untuk melatih logika dengan menebak angka rahasia seefisien mungkin agar menjadi yang terbaik.",
+            "projects.liveDemo": "Demo",
+            "projects.code": "Kode",
+            "projects.viewAll": "Lihat Semua Proyek di GitHub",
+
+            "education.title": "Pendidikan",
+            "education.sectionTitle": "Pendidikan & Sertifikasi",
+            "education.degree1.title": "Informatika",
+            "education.degree1.school": "Universitas Teknokrat Indonesia, Lampung",
+            "education.degree1.meta": "2025 - sekarang",
+            "education.degree1.note": "Sedang Studi (semester 3)",
+
+            "contact.title": "Kontak",
+            "contact.lead": "Punya proyek atau ingin kolaborasi? Saya senang berdiskusi. Mari ciptakan sesuatu yang keren bersama.",
+            "contact.formTitle": "Kirim Pesan",
+            "contact.form.name": "Nama",
+            "contact.form.email": "Email",
+            "contact.form.subject": "Subjek",
+            "contact.form.message": "Pesan",
+            "contact.form.send": "Kirim",
+
+            "contact.infoTitle": "Informasi Kontak",
+            "contact.info.email": "Email",
+            "contact.info.phone": "Telepon",
+            "contact.info.location": "Lokasi",
+
+            "social.follow": "Ikuti Saya",
+
+            "footer.hireTitle": "Ayo Bekerja Sama",
+            "footer.hireBody": "Saya tersedia untuk proyek freelance dan peluang full-time. Baik website sederhana maupun aplikasi kompleks, saya siap membantu.",
+            "footer.startProject": "Mulai Proyek",
+            "footer.name": "Nirmala Nurfadillah",
+            "footer.tagline": "Full Stack Developer yang antusias membangun pengalaman digital yang hebat.",
+            "footer.quickLinks": "Tautan Cepat",
+            "footer.contact": "Kontak",
+            "footer.location": "Bandar Lampung, Lampung",
+            "footer.copyright": "© 2026 Nirmala Nurfadillah. Seluruh hak cipta.",
+            "footer.madeWith": "Dibuat dengan ❤️ dan kopi."
+            ,
+            "nav.about": "Tentang",
+            "nav.skills": "Keahlian",
+            "nav.projects": "Proyek",
+            "nav.experience": "Pengalaman",
+            "nav.contact": "Kontak"
+            },
+            en: {
+            "hero.name": "Nirmala Nurfadillah",
+            "hero.role": "Student",
+            "hero.summary": "A Computer Science student at Universitas Teknokrat Indonesia dedicated to software development and digital technology. Strong understanding of data structures, programming logic, and system design, with a special interest in web development and database management. Always eager to learn new frameworks and committed to building useful digital solutions through clean code and consistent learning.",
+            "cta.viewWork": "View My Work",
+            "cta.contact": "Get In Touch",
+
+            "about.title": "About Me",
+            "about.storyTitle": "My Story",
+            "about.storyBody": "I am a student in the Informatics program at Universitas Teknokrat Indonesia, passionate about software development and digital technology. My academic journey has strengthened fundamentals through in-depth exploration of data structures, programming logic, and efficient system design. I’m particularly interested in web development and database management, and I enjoy exploring new tools and frameworks. I believe consistent learning, structured coding, and thorough conceptual understanding are essential to creating useful digital solutions.",
+            "about.interestsTitle": "Interests & Passions",
+            "about.interests.webdev": "Web Development",
+            "about.interests.dsa": "Data Structure & Algorithm",
+            "about.interests.ds": "Data Science",
+            "about.interests.viz": "Data Visualization",
+            "about.interests.uiux": "UI/UX Design",
+            "about.interests.cloud": "Cloud Computing",
+            "about.interests.db": "Database System",
+
+            "skills.title": "Skills & Expertise",
+            "skills.frontend": "Frontend Development",
+            "skills.html": "HTML",
+            "skills.css": "CSS",
+            "skills.backend": "Backend Development",
+            "skills.python": "Python",
+            "skills.tools": "Tools & Technologies",
+            "skills.vscode": "VS Code",
+            "skills.git": "Git",
+            "skills.colab": "Google Colab",
+
+            "projects.title": "Featured Projects",
+            "projects.guessNumber.desc": "A simple data structure game to sharpen logic by guessing a secret number as efficiently as possible.",
+            "projects.liveDemo": "Live Demo",
+            "projects.code": "Code",
+            "projects.viewAll": "View All Projects on GitHub",
+
+            "education.title": "Education",
+            "education.sectionTitle": "Education & Certifications",
+            "education.degree1.title": "Informatics",
+            "education.degree1.school": "Teknokrat University of Indonesia, Lampung",
+            "education.degree1.meta": "2025 - now",
+            "education.degree1.note": "On Going Study (now at 3 semesters)",
+
+            "contact.title": "Get In Touch",
+            "contact.lead": "Have a project in mind or want to collaborate? I’d love to hear from you. Let’s create something amazing together.",
+            "contact.formTitle": "Send me a message",
+            "contact.form.name": "Name",
+            "contact.form.email": "Email",
+            "contact.form.subject": "Subject",
+            "contact.form.message": "Message",
+            "contact.form.send": "Send",
+
+            "contact.infoTitle": "Contact Information",
+            "contact.info.email": "Email",
+            "contact.info.phone": "Phone",
+            "contact.info.location": "Location",
+
+            "social.follow": "Follow Me",
+
+            "footer.hireTitle": "Let's Work Together",
+            "footer.hireBody": "I’m available for freelance projects and full-time opportunities. Whether you need a simple website or a complex web app, I’m here to help.",
+            "footer.startProject": "Start a Project",
+            "footer.name": "Nirmala Nurfadillah",
+            "footer.tagline": "Full Stack Developer passionate about creating exceptional digital experiences.",
+            "footer.quickLinks": "Quick Links",
+            "footer.contact": "Get In Touch",
+            "footer.location": "Bandar Lampung, Lampung",
+            "footer.copyright": "© 2026 Nirmala Nurfadillah. All rights reserved.",
+            "footer.madeWith": "Made with ❤️ and lots of coffee.",
+            "nav.about": "About",
+            "nav.skills": "Skills",
+            "nav.projects": "Projects",
+            "nav.experience": "Experience",
+            "nav.contact": "Contact"
+            }
+        };
+
+        // Util: ganti teks sesuai bahasa
+        function applyTranslations(lang) {
+            const dict = i18n[lang] || i18n.id;
+            document.documentElement.setAttribute('lang', lang); // penting untuk a11y/SEO
+
+            // Setel dropdown agar sinkron
+            const sel = document.getElementById('lang');
+            if (sel && sel.value !== lang) sel.value = lang;
+
+            // Isi semua elemen bertanda data-i18n
+            document.querySelectorAll('[data-i18n]').forEach(node => {
+            const key = node.getAttribute('data-i18n');
+            const text = dict[key];
+            if (typeof text === 'string') {
+                // Tentukan properti: placeholder vs text
+                if (node.tagName === 'INPUT' || node.tagName === 'TEXTAREA') {
+                if (node.hasAttribute('placeholder')) {
+                    node.setAttribute('placeholder', text);
+                } else {
+                    node.value = text; // jika memang isian default
+                }
+                } else if (node.tagName === 'A' && node.hasAttribute('title')) {
+                node.setAttribute('title', text);
+                node.textContent = text;
+                } else {
+                node.textContent = text;
+                }
+            }
+            });
+
+            // Simpan preferensi
+            try {
+            localStorage.setItem('pref-lang', lang);
+            } catch (e) {}
+        }
+
+        // Deteksi bahasa awal: dari localStorage, lalu dari browser, default ID
+        function detectInitialLang() {
+            try {
+            const saved = localStorage.getItem('pref-lang');
+            if (saved && i18n[saved]) return saved;
+            } catch (e) {}
+
+            const nav = (navigator.language || navigator.userLanguage || 'id').toLowerCase();
+            if (nav.startsWith('id')) return 'id';
+            if (nav.startsWith('en')) return 'en';
+            return 'id';
+        }
+
+        // Inisialisasi
+        document.addEventListener('DOMContentLoaded', () => {
+            const initial = detectInitialLang();
+            applyTranslations(initial);
+
+            const selector = document.getElementById('lang');
+            if (selector) {
+            selector.addEventListener('change', (e) => {
+                const lang = e.target.value;
+                applyTranslations(lang);
+            });
             }
         });
     </script>
