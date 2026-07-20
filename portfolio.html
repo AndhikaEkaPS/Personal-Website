@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andhika Eka PS - Data Analyst</title>
+    <link rel="stylesheet" href="portfolio-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo" onclick="scrollToSection('hero')">
+                    <h1>Andhika Eka PS</h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <button onclick="scrollToSection('about')">About</button>
+                    <button onclick="scrollToSection('skills')">Skills</button>
+                    <button onclick="scrollToSection('projects')">Projects</button>
+                    <button onclick="scrollToSection('experience')">Experience</button>
+                    <button onclick="scrollToSection('contact')">Contact</button>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="theme-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+                        <svg class="sun-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                        <svg class="moon-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+
+                    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+                        <svg class="menu-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                        <svg class="close-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav">
+                <nav class="mobile-nav-content">
+                    <button onclick="scrollToSection('about')">About</button>
+                    <button onclick="scrollToSection('skills')">Skills</button>
+                    <button onclick="scrollToSection('projects')">Projects</button>
+                    <button onclick="scrollToSection('experience')">Experience</button>
+                    <button onclick="scrollToSection('contact')">Contact</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-intro">
+                            <p class="greeting">Hello, I'm</p>
+                            <h1 class="name">Andhika Eka PS</h1>
+                            <h2 class="title">Data Analyst</h2>
+                            <p class="description">
+                                A dedicated Data Analyst committed to transforming raw data into actionable 
+                                strategic insights. Skilled in exploratory data analysis, statistical modeling, 
+                                and data visualization to support data-driven decision making. Experienced in 
+                                identifying trends, optimizing business processes, and communicating technical 
+                                recommendations in a way that stakeholders can easily understand.
+                            </p>
+                        </div>
+
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                                View My Work
+                            </button>
+                            <button class="btn btn-outline" onclick="scrollToSection('contact')">
+                                Get In Touch
+                            </button>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/AndhikaEkaPS/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/andhika21eps" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:andhika2103.9f@gmail.com" aria-label="Email" class="social-btn">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <div class="profile-image">
+                                <img src="hero.jpeg"
+                                    alt="Andhika Eka PS - Data Analyst" 
+                                    class="profile-img">
+                            </div>
+                            <div class="wave-emoji">
+                                <span>👋</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator">
+                    <button class="scroll-btn" onclick="scrollToSection('about')" aria-label="Scroll to about section">
+                        <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <polyline points="19,12 12,19 5,12"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <p>Get to know more about my background, experience, and what drives my passion for development.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-content">
+                        <div class="about-story">
+                            <h3>My Story</h3>
+                            <div class="story-text">
+                                <p>
+                                    I'm a passionate full-stack developer with over 5 years of experience creating 
+                                    digital solutions that make a difference. My journey began with a Computer Science 
+                                    degree and has evolved through working with startups and established companies.
+                                </p>
+                                <p>
+                                    I specialize in React, Node.js, and cloud technologies, but I'm always eager to 
+                                    learn new tools and frameworks. I believe in writing clean, maintainable code 
+                                    and creating user experiences that delight and inspire.
+                                </p>
+                                <p>
+                                    When I'm not coding, you'll find me exploring new hiking trails, contributing to 
+                                    open source projects, or experimenting with the latest tech trends.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="interests-section">
+                            <h3>Interests & Passions</h3>
+                            <div class="interests-tags">
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Open Source</span>
+                                <span class="tag">UI/UX Design</span>
+                                <span class="tag">Mobile Development</span>
+                                <span class="tag">Cloud Computing</span>
+                                <span class="tag">DevOps</span>
+                                <span class="tag">Blockchain</span>
+                                <span class="tag">Data Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <svg class="stat-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                            <p class="stat-value">5+</p>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                        <div class="stat-card">
+                            <svg class="stat-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                            <p class="stat-value">50+</p>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-card">
+                            <svg class="stat-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                            <p class="stat-value">30+</p>
+                            <p class="stat-label">Happy Clients</p>
+                        </div>
+                        <div class="stat-card">
+                            <svg class="stat-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <p class="stat-value">Bandung</p>
+                            <p class="stat-label">Location</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Skills & Expertise</h2>
+                    <p>Here are the technologies and tools I use to bring ideas to life.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-card">
+                            <h3>Frontend Development</h3>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>React/Next.js</span>
+                                        <span>95%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>TypeScript</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Tailwind CSS</span>
+                                        <span>88%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Vue.js</span>
+                                        <span>75%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-card">
+                            <h3>Backend Development</h3>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Node.js</span>
+                                        <span>92%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Python</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>PostgreSQL</span>
+                                        <span>88%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>MongoDB</span>
+                                        <span>82%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 82%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-card">
+                            <h3>DevOps & Cloud</h3>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>AWS</span>
+                                        <span>86%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 86%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Docker</span>
+                                        <span>84%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 84%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>CI/CD</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Kubernetes</span>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tools-section">
+                    <h3>Tools & Technologies</h3>
+                    <div class="tools-tags">
+                        <span class="tool-tag">VS Code</span>
+                        <span class="tool-tag">Git</span>
+                        <span class="tool-tag">Figma</span>
+                        <span class="tool-tag">Postman</span>
+                        <span class="tool-tag">Jira</span>
+                        <span class="tool-tag">Slack</span>
+                        <span class="tool-tag">Vercel</span>
+                        <span class="tool-tag">Netlify</span>
+                        <span class="tool-tag">Firebase</span>
+                        <span class="tool-tag">Supabase</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <p>A showcase of my recent work and the technologies I've used to solve real-world problems.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1658297063569-162817482fb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxlY29tbWVyY2UlMjB3ZWJzaXRlfGVufDF8fHx8MTc1NTQ3ODMxNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="E-Commerce Platform" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/AndhikaEkaPS/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, and order processing.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1554306274-f23873d9a26c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzU1NTgxOTUwfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Task Management App" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/AndhikaEkaPS/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>A collaborative task management application with real-time updates, team collaboration features, and advanced project tracking capabilities.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Prisma</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Socket.io</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1597740985671-2a8a3b80502e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzU1NTE2ODEzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Mobile Fitness App" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/AndhikaEkaPS/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Mobile Fitness App</h3>
+                            <p>A React Native fitness tracking app with workout plans, progress tracking, and social features. Includes integration with health APIs and wearable devices.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Redux</span>
+                                <span class="tech-tag">Health API</span>
+                                <span class="tech-tag">Push Notifications</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-cta">
+                    <a href="https://github.com/AndhikaEkaPS/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        View All Projects on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Experience & Education</h2>
+                    <p>My professional journey and educational background that shaped my expertise.</p>
+                </div>
+
+                <div class="experience-grid">
+                    <div class="experience-column">
+                        <div class="column-header">
+                            <svg class="section-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                            <h3>Work Experience</h3>
+                        </div>
+
+                        <div class="experience-timeline">
+                            <div class="experience-item">
+                                <div class="experience-header">
+                                    <h4>Senior Data Analyst</h4>
+                                    <div class="experience-date">
+                                        <svg class="date-icon" fill="currentColor" viewBox="0 0 24 24">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                            <line x1="16" y1="2" x2="16" y2="6"/>
+                                            <line x1="8" y1="2" x2="8" y2="6"/>
+                                            <line x1="3" y1="10" x2="21" y2="10"/>
+                                        </svg>
+                                        2022 - Present
+                                    </div>
+                                </div>
+                                <div class="company-info">
+                                    <svg class="location-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    TechCorp Inc. • San Francisco, CA
+                                </div>
+                                <p class="job-description">Lead development of scalable web applications serving 1M+ users. Mentor junior developers and drive technical architecture decisions.</p>
+                                <div class="achievements">
+                                    <h5>Key Achievements:</h5>
+                                    <ul>
+                                        <li>Improved application performance by 40%</li>
+                                        <li>Led team of 6 developers</li>
+                                        <li>Implemented CI/CD pipeline reducing deployment time by 60%</li>
+                                    </ul>
+                                </div>
+                                <div class="experience-tags">
+                                    <span class="exp-tag">React</span>
+                                    <span class="exp-tag">Node.js</span>
+                                    <span class="exp-tag">AWS</span>
+                                    <span class="exp-tag">PostgreSQL</span>
+                                    <span class="exp-tag">Docker</span>
+                                </div>
+                            </div>
+
+                            <div class="experience-item">
+                                <div class="experience-header">
+                                    <h4>Data Analyst</h4>
+                                    <div class="experience-date">
+                                        <svg class="date-icon" fill="currentColor" viewBox="0 0 24 24">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                            <line x1="16" y1="2" x2="16" y2="6"/>
+                                            <line x1="8" y1="2" x2="8" y2="6"/>
+                                            <line x1="3" y1="10" x2="21" y2="10"/>
+                                        </svg>
+                                        2020 - 2022
+                                    </div>
+                                </div>
+                                <div class="company-info">
+                                    <svg class="location-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    StartupXYZ • Remote
+                                </div>
+                                <p class="job-description">Developed customer-facing applications and internal tools. Worked closely with product team to implement new features and improve user experience.</p>
+                                <div class="achievements">
+                                    <h5>Key Achievements:</h5>
+                                    <ul>
+                                        <li>Built 3 major product features from scratch</li>
+                                        <li>Reduced API response time by 50%</li>
+                                        <li>Implemented automated testing suite</li>
+                                    </ul>
+                                </div>
+                                <div class="experience-tags">
+                                    <span class="exp-tag">Vue.js</span>
+                                    <span class="exp-tag">Python</span>
+                                    <span class="exp-tag">MongoDB</span>
+                                    <span class="exp-tag">Firebase</span>
+                                </div>
+                            </div>
+
+                            <div class="experience-item">
+                                <div class="experience-header">
+                                    <h4>Frontend Developer</h4>
+                                    <div class="experience-date">
+                                        <svg class="date-icon" fill="currentColor" viewBox="0 0 24 24">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                            <line x1="16" y1="2" x2="16" y2="6"/>
+                                            <line x1="8" y1="2" x2="8" y2="6"/>
+                                            <line x1="3" y1="10" x2="21" y2="10"/>
+                                        </svg>
+                                        2019 - 2020
+                                    </div>
+                                </div>
+                                <div class="company-info">
+                                    <svg class="location-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    Digital Agency • Los Angeles, CA
+                                </div>
+                                <p class="job-description">Created responsive websites and web applications for various clients. Collaborated with designers to implement pixel-perfect interfaces.</p>
+                                <div class="achievements">
+                                    <h5>Key Achievements:</h5>
+                                    <ul>
+                                        <li>Delivered 15+ client projects</li>
+                                        <li>Improved website loading speed by 35%</li>
+                                        <li>Established component library for team</li>
+                                    </ul>
+                                </div>
+                                <div class="experience-tags">
+                                    <span class="exp-tag">JavaScript</span>
+                                    <span class="exp-tag">SCSS</span>
+                                    <span class="exp-tag">WordPress</span>
+                                    <span class="exp-tag">jQuery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-column">
+                        <div class="column-header">
+                            <svg class="section-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                            <h3>Education & Certifications</h3>
+                        </div>
+
+                        <div class="education-timeline">
+                            <div class="education-item">
+                                <h4>Bachelor of Science in Computer Science</h4>
+                                <div class="education-details">
+                                    <span>University of California, Berkeley</span>
+                                    <span class="education-date">
+                                        <svg class="date-icon" fill="currentColor" viewBox="0 0 24 24">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                            <line x1="16" y1="2" x2="16" y2="6"/>
+                                            <line x1="8" y1="2" x2="8" y2="6"/>
+                                            <line x1="3" y1="10" x2="21" y2="10"/>
+                                        </svg>
+                                        2015 - 2019
+                                    </span>
+                                </div>
+                                <ul class="education-achievements">
+                                    <li>Summa Cum Laude</li>
+                                    <li>Dean's List (6 semesters)</li>
+                                    <li>Computer Science Honor Society</li>
+                                </ul>
+                            </div>
+
+                            <div class="education-item">
+                                <h4>AWS Certified Solutions Architect</h4>
+                                <div class="education-details">
+                                    <span>Amazon Web Services</span>
+                                    <span class="education-date">
+                                        <svg class="date-icon" fill="currentColor" viewBox="0 0 24 24">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                            <line x1="16" y1="2" x2="16" y2="6"/>
+                                            <line x1="8" y1="2" x2="8" y2="6"/>
+                                            <line x1="3" y1="10" x2="21" y2="10"/>
+                                        </svg>
+                                        2021
+                                    </span>
+                                </div>
+                                <ul class="education-achievements">
+                                    <li>Professional Level Certification</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>Have a project in mind or want to collaborate? I'd love to hear from you. Let's create something amazing together.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-form-card">
+                        <div class="form-header">
+                            <h3>Send me a message</h3>
+                            <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                        </div>
+                        <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                                </svg>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-info-card">
+                            <div class="contact-info-header">
+                                <h3>Contact Information</h3>
+                                <p>Feel free to reach out through any of these channels.</p>
+                            </div>
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                    <div>
+                                        <p class="contact-label">Email</p>
+                                        <a href="mailto:andhika2103.9f@gmail.com">andhika2103.9f@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact-method">
+                                    <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                    <div>
+                                        <p class="contact-label">Phone</p>
+                                        <a href="tel:+628980018816">+62 (898) 0018-816</a>
+                                    </div>
+                                </div>
+                                <div class="contact-method">
+                                    <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    <div>
+                                        <p class="contact-label">Location</p>
+                                        <p>Bandung, Jawa Barat</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-card">
+                            <div class="social-header">
+                                <h3>Follow Me</h3>
+                                <p>Connect with me on social media and stay updated with my latest work.</p>
+                            </div>
+                            <div class="social-buttons">
+                                <a href="https://github.com/AndhikaEkaPS/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn-outline">
+                                    <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/andhika21eps" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn-outline">
+                                    <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://instagram.com/andh0103" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn-outline">
+                                    <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="cta-card">
+                            <div class="cta-header">
+                                <h3>Let's Work Together</h3>
+                            </div>
+                            <p>I'm currently available for freelance projects and full-time opportunities. Whether you need a simple website or a complex web application, I'm here to help.</p>
+                            <a href="mailto:andhika2103.9f@gmail.com" class="btn btn-primary">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Start a Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Andhika Eka PS</h3>
+                    <p>Full Stack Developer passionate about creating exceptional digital experiences. Let's build something amazing together.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/AndhikaEkaPS/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/andhika21eps" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:andhika2103.9f@gmail.com" aria-label="Email" class="social-btn">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><button onclick="scrollToSection('about')">About</button></li>
+                        <li><button onclick="scrollToSection('skills')">Skills</button></li>
+                        <li><button onclick="scrollToSection('projects')">Projects</button></li>
+                        <li><button onclick="scrollToSection('experience')">Experience</button></li>
+                        <li><button onclick="scrollToSection('contact')">Contact</button></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <div class="footer-contact-info">
+                        <p><a href="mailto:andhika2103.9f@gmail.com">andhika2103.9f@gmail.com</a></p>
+                        <p><a href="tel:+628980018816">+62 (898) 0018-816</a></p>
+                        <p>Bandung, Jawa Barat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; <span id="currentYear"></span> Andhika Eka PS. All rights reserved.</p>
+                    <p class="footer-love">
+                        Made with <span class="heart">❤️</span> and lots of coffee
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile menu state
+        let mobileMenuOpen = false;
+
+        // Dark mode functionality
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            
+            // Update theme toggle icon
+            const sunIcon = document.querySelector('.sun-icon');
+            const moonIcon = document.querySelector('.moon-icon');
+            
+            if (isDark) {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            } else {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            }
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            mobileMenuOpen = !mobileMenuOpen;
+            const mobileNav = document.querySelector('.mobile-nav');
+            const menuIcon = document.querySelector('.menu-icon');
+            const closeIcon = document.querySelector('.close-icon');
+            
+            if (mobileMenuOpen) {
+                mobileNav.style.display = 'block';
+                menuIcon.style.display = 'none';
+                closeIcon.style.display = 'block';
+            } else {
+                mobileNav.style.display = 'none';
+                menuIcon.style.display = 'block';
+                closeIcon.style.display = 'none';
+            }
+        }
+
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+            
+            // Close mobile menu if open
+            if (mobileMenuOpen) {
+                toggleMobileMenu();
+            }
+        }
+
+        // Contact form handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            console.log('Form submitted:', data);
+            alert("Thank you for your message! I'll get back to you soon.");
+            event.target.reset();
+        }
+
+        // Initialize theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const isDark = document.documentElement.classList.contains('dark');
+            const sunIcon = document.querySelector('.sun-icon');
+            const moonIcon = document.querySelector('.moon-icon');
+            
+            if (isDark) {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            } else {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
