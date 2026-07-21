@@ -172,7 +172,8 @@ p {
 }
 
 .theme-toggle,
-.mobile-menu-toggle {
+.mobile-menu-toggle,
+.lang-toggle {
   width: 2.5rem;
   height: 2.5rem;
   display: flex;
@@ -187,8 +188,15 @@ p {
 }
 
 .theme-toggle:hover,
-.mobile-menu-toggle:hover {
+.mobile-menu-toggle:hover,
+.lang-toggle:hover {
   background-color: var(--secondary);
+}
+
+.lang-toggle {
+  border: 1px solid var(--border);
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-medium);
 }
 
 .sun-icon,

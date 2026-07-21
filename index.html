@@ -12,27 +12,23 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo" onclick="scrollToSection('hero')">
-                    <h1 data-i18n="hero.name">Nirmala Nurfadillah</h1>
+                    <h1>Nirmala Nurfadillah</h1>
                 </div>
 
                 <!-- Desktop Navigation -->
                 <nav class="desktop-nav">
-                    <button onclick="scrollToSection('about')">About</button>
-                    <button onclick="scrollToSection('skills')">Skills</button>
-                    <button onclick="scrollToSection('projects')">Projects</button>
-                    <button onclick="scrollToSection('experience')">Experience</button>
-                    <button onclick="scrollToSection('contact')">Contact</button>
-                </nav>
-
-                <nav class="lang-switcher">
-                    <label for="lang" class="visually-hidden">Pilih Bahasa</label>
-                    <select id="lang" aria-label="Pilih Bahasa">
-                        <option value="id">Indonesia</option>
-                        <option value="en">English</option>
-                    </select>
+                    <button onclick="scrollToSection('about')" data-i18n="nav.about">About</button>
+                    <button onclick="scrollToSection('skills')" data-i18n="nav.skills">Skills</button>
+                    <button onclick="scrollToSection('projects')" data-i18n="nav.projects">Projects</button>
+                    <button onclick="scrollToSection('experience')" data-i18n="nav.experience">Experience</button>
+                    <button onclick="scrollToSection('contact')" data-i18n="nav.contact">Contact</button>
                 </nav>
 
                 <div class="header-actions">
+                    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Switch language">
+                        <span id="langLabel">ID</span>
+                    </button>
+
                     <button class="theme-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
                         <svg class="sun-icon" fill="currentColor" viewBox="0 0 24 24">
                             <circle cx="12" cy="12" r="5"/>
@@ -67,11 +63,11 @@
             <!-- Mobile Navigation -->
             <div class="mobile-nav">
                 <nav class="mobile-nav-content">
-                    <button onclick="scrollToSection('about')">About</button>
-                    <button onclick="scrollToSection('skills')">Skills</button>
-                    <button onclick="scrollToSection('projects')">Projects</button>
-                    <button onclick="scrollToSection('experience')">Experience</button>
-                    <button onclick="scrollToSection('contact')">Contact</button>
+                    <button onclick="scrollToSection('about')" data-i18n="nav.about">About</button>
+                    <button onclick="scrollToSection('skills')" data-i18n="nav.skills">Skills</button>
+                    <button onclick="scrollToSection('projects')" data-i18n="nav.projects">Projects</button>
+                    <button onclick="scrollToSection('experience')" data-i18n="nav.experience">Experience</button>
+                    <button onclick="scrollToSection('contact')" data-i18n="nav.contact">Contact</button>
                 </nav>
             </div>
         </div>
@@ -84,10 +80,10 @@
                 <div class="hero-grid">
                     <div class="hero-content">
                         <div class="hero-intro">
-                            <p class="greeting">Hello, I'm</p>
+                            <p class="greeting" data-i18n="hero.greeting">Hello, I'm</p>
                             <h1 class="name">Nirmala Nurfadillah</h1>
                             <h2 class="title" data-i18n="hero.role">Student</h2>
-                            <p class="description" data-i18n="hero.summary">
+                            <p class="description" data-i18n="hero.description">
                                 A Computer Science student at Universitas Teknokrat Indonesia who is 
                                 dedicated to software development and digital technology. Possesses a 
                                 strong understanding of data structures, programming logic, and system 
@@ -98,10 +94,10 @@
                         </div>
 
                         <div class="hero-buttons">
-                            <button class="btn btn-primary" onclick="scrollToSection('projects')" data-i18n="cta.viewWork">
+                            <button class="btn btn-primary" onclick="scrollToSection('projects')" data-i18n="hero.viewWork">
                                 View My Work
                             </button>
-                            <button class="btn btn-outline" onclick="scrollToSection('contact')" data-i18n="cta.contact">
+                            <button class="btn btn-outline" onclick="scrollToSection('contact')" data-i18n="hero.getInTouch">
                                 Get In Touch
                             </button>
                         </div>
@@ -156,7 +152,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2 data-i18n="about.title">About Me</h2>
-                    <p>Get to know more about my background, experience, and what drives my passion for development.</p>
+                    <p data-i18n="about.subtitle">Get to know more about my background, experience, and what drives my passion for development.</p>
                 </div>
 
                 <div class="about-grid">
@@ -164,15 +160,17 @@
                         <div class="about-story">
                             <h3 data-i18n="about.storyTitle">My Story</h3>
                             <div class="story-text">
-                                <p data-i18n="about.storyBody">
+                                <p data-i18n="about.story1">
                                     I am a student in the Computer Science program at Universitas Teknokrat Indonesia
                                     who is passionate about software development and digital technology. My academic journey 
                                     on campus has strengthened my fundamental understanding through in-depth exploration of
-                                    data structures, programming logic, and efficient system design.<br>
-
+                                    data structures, programming logic, and efficient system design.
+                                </p>
+                                <p data-i18n="about.story2">
                                     I have a particular interest in web development and database management, and I am always
-                                    eager to explore new tools and frameworks.<br>
-
+                                    eager to explore new tools and frameworks.
+                                </p>
+                                <p data-i18n="about.story3">
                                     I believe that consistent learning, structured coding, and a thorough understanding
                                     of concepts are essential foundations for creating useful digital solutions.
                                 </p>
@@ -180,15 +178,15 @@
                         </div>
 
                         <div class="interests-section">
-                            <h3>Interests & Passions</h3>
+                            <h3 data-i18n="about.interestsTitle">Interests & Passions</h3>
                             <div class="interests-tags">
-                                <span class="tag">Web Development</span>
-                                <span class="tag">Data Structure & Algorithm</span>
-                                <span class="tag">Data Science</span>
-                                <span class="tag">Data Visualization</span>
-                                <span class="tag">UI/UX Design</span>
-                                <span class="tag">Cloud Computing</span>
-                                <span class="tag">Database System</span>
+                                <span class="tag" data-i18n="about.tag1">Web Development</span>
+                                <span class="tag" data-i18n="about.tag2">Data Structure & Algorithm</span>
+                                <span class="tag" data-i18n="about.tag3">Data Science</span>
+                                <span class="tag" data-i18n="about.tag4">Data Visualization</span>
+                                <span class="tag" data-i18n="about.tag5">UI/UX Design</span>
+                                <span class="tag" data-i18n="about.tag6">Cloud Computing</span>
+                                <span class="tag" data-i18n="about.tag7">Database System</span>
                             </div>
                         </div>
                     </div>
@@ -199,7 +197,7 @@
                                 <path d="M6 9l6 6 6-6"/>
                             </svg>
                             <p class="stat-value">1</p>
-                            <p class="stat-label">Projects Completed</p>
+                            <p class="stat-label" data-i18n="about.statProjects">Projects Completed</p>
                         </div>
                         <div class="stat-card">
                             <svg class="stat-icon" fill="currentColor" viewBox="0 0 24 24">
@@ -207,7 +205,7 @@
                                 <circle cx="12" cy="10" r="3"/>
                             </svg>
                             <p class="stat-value">Bandar Lampung</p>
-                            <p class="stat-label">Location</p>
+                            <p class="stat-label" data-i18n="about.statLocation">Location</p>
                         </div>
                     </div>
                 </div>
@@ -218,14 +216,14 @@
         <section id="skills" class="skills-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Skills & Expertise</h2>
-                    <p>Here are the technologies and tools I use to bring ideas to life.</p>
+                    <h2 data-i18n="skills.title">Skills & Expertise</h2>
+                    <p data-i18n="skills.subtitle">Here are the technologies and tools I use to bring ideas to life.</p>
                 </div>
 
                 <div class="skills-grid">
                     <div class="skill-category">
                         <div class="skill-card">
-                            <h3>Frontend Development</h3>
+                            <h3 data-i18n="skills.frontend">Frontend Development</h3>
                             <div class="skills-list">
                                 <div class="skill-item">
                                     <div class="skill-header">
@@ -251,7 +249,7 @@
 
                     <div class="skill-category">
                         <div class="skill-card">
-                            <h3>Backend Development</h3>
+                            <h3 data-i18n="skills.backend">Backend Development</h3>
                             <div class="skills-list">
                                 <div class="skill-item">
                                     <div class="skill-header">
@@ -268,7 +266,7 @@
                 </div>
 
                 <div class="tools-section">
-                    <h3>Tools & Technologies</h3>
+                    <h3 data-i18n="skills.tools">Tools & Technologies</h3>
                     <div class="tools-tags">
                         <span class="tool-tag">VS Code</span>
                         <span class="tool-tag">Git</span>
@@ -282,8 +280,8 @@
         <section id="projects" class="projects-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Featured Projects</h2>
-                    <p>A showcase of my recent work and the technologies I've used to solve real-world problems.</p>
+                    <h2 data-i18n="projects.title">Featured Projects</h2>
+                    <p data-i18n="projects.subtitle">A showcase of my recent work and the technologies I've used to solve real-world problems.</p>
                 </div>
 
                 <div class="projects-grid">
@@ -297,19 +295,19 @@
                                         <polyline points="15,3 21,3 21,9"/>
                                         <line x1="10" y1="14" x2="21" y2="3"/>
                                     </svg>
-                                    Live Demo
+                                    <span data-i18n="projects.liveDemo">Live Demo</span>
                                 </a>
                                 <a href="https://github.com/fadillahnirmala/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
                                     <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                     </svg>
-                                    Code
+                                    <span data-i18n="projects.code">Code</span>
                                 </a>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>Guess Number</h3>
-                            <p>A simple data structure game designed to sharpen our logical thinking 
+                            <p data-i18n="projects.guessNumberDesc">A simple data structure game designed to sharpen our logical thinking 
                                 skills by guessing a secret number as efficiently as possible in order 
                                 to be the best</p>
                             <div class="project-tags">
@@ -323,7 +321,7 @@
                         <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                         </svg>
-                        View All Projects on GitHub
+                        <span data-i18n="projects.viewAll">View All Projects on GitHub</span>
                     </a>
                 </div>
             </div>
@@ -333,8 +331,8 @@
         <section id="experience" class="experience-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Education</h2>
-                    <p>My educational background that shaped my expertise.</p>
+                    <h2 data-i18n="education.title">Education</h2>
+                    <p data-i18n="education.subtitle">My educational background that shaped my expertise.</p>
                 </div>
 
                     <div class="education-column">
@@ -343,12 +341,12 @@
                                 <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
                                 <path d="M6 12v5c3 3 9 3 12 0v-5"/>
                             </svg>
-                            <h3>Education & Certifications</h3>
+                            <h3 data-i18n="education.columnTitle">Education & Certifications</h3>
                         </div>
 
                         <div class="education-timeline">
                             <div class="education-item">
-                                <h4>Informatics</h4>
+                                <h4 data-i18n="education.item1.title">Informatics</h4>
                                 <div class="education-details">
                                     <span>Teknokrat University of Indonesia, Lampung</span>
                                     <span class="education-date">
@@ -358,17 +356,17 @@
                                             <line x1="8" y1="2" x2="8" y2="6"/>
                                             <line x1="3" y1="10" x2="21" y2="10"/>
                                         </svg>
-                                        2025 - now
+                                        <span data-i18n="education.item1.date">2025 - now</span>
                                     </span>
                                 </div>
                                 <ul class="education-achievements">
-                                    <li>On Going Study (now at 3 semesters)</li>
+                                    <li data-i18n="education.item1.achievement">On Going Study (now at 3 semesters)</li>
                                 </ul>
                             </div>
 
                             <div class="education-timeline">
                             <div class="education-item">
-                                <h4>High School Graduated in Social Science</h4>
+                                <h4 data-i18n="education.item2.title">High School Graduated in Social Science</h4>
                                 <div class="education-details">
                                     <span>MA Al-Mahfudziyah 207, Lampung</span>
                                     <span class="education-date">
@@ -382,12 +380,12 @@
                                     </span>
                                 </div>
                                 <ul class="education-achievements">
-                                    <li>Top 3 Graduated Student</li>
+                                    <li data-i18n="education.item2.achievement">Top 3 Graduated Student</li>
                                 </ul>
                             </div>
 
                             <div class="education-item">
-                                <h4>Top Student, Memorized Selected Surahs</h4>
+                                <h4 data-i18n="education.item3.title">Top Student, Memorized Selected Surahs</h4>
                                 <div class="education-details">
                                     <span>MA Al-Mahfudziyah 207, Lampung</span>
                                     <span class="education-date">
@@ -401,12 +399,12 @@
                                     </span>
                                 </div>
                                 <ul class="education-achievements">
-                                    <li>Schools Level Certification</li>
+                                    <li data-i18n="education.certLevel">Schools Level Certification</li>
                                 </ul>
                             </div>
 
                             <div class="education-item">
-                                <h4>2nd Best Al-Barzanji</h4>
+                                <h4 data-i18n="education.item4.title">2nd Best Al-Barzanji</h4>
                                 <div class="education-details">
                                     <span>MA Al-Mahfudziyah, Lampung</span>
                                     <span class="education-date">
@@ -420,12 +418,12 @@
                                     </span>
                                 </div>
                                 <ul class="education-achievements">
-                                    <li>Schools Level Certification</li>
+                                    <li data-i18n="education.certLevel">Schools Level Certification</li>
                                 </ul>
                             </div>
 
                             <div class="education-item">
-                                <h4>2nd Best Al-Barzanji</h4>
+                                <h4 data-i18n="education.item5.title">2nd Best Al-Barzanji</h4>
                                 <div class="education-details">
                                     <span>MA Al-Mahfudziyah 207, Lampung</span>
                                     <span class="education-date">
@@ -439,7 +437,7 @@
                                     </span>
                                 </div>
                                 <ul class="education-achievements">
-                                    <li>Schools Level Certification</li>
+                                    <li data-i18n="education.certLevel">Schools Level Certification</li>
                                 </ul>
                             </div>
                         </div>
@@ -452,41 +450,41 @@
         <section id="contact" class="contact-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Get In Touch</h2>
-                    <p>Have a project in mind or want to collaborate? I'd love to hear from you. Let's create something amazing together.</p>
+                    <h2 data-i18n="contact.title">Get In Touch</h2>
+                    <p data-i18n="contact.subtitle">Have a project in mind or want to collaborate? I'd love to hear from you. Let's create something amazing together.</p>
                 </div>
 
                 <div class="contact-grid">
                     <div class="contact-form-card">
                         <div class="form-header">
-                            <h3>Send me a message</h3>
-                            <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                            <h3 data-i18n="contact.formTitle">Send me a message</h3>
+                            <p data-i18n="contact.formSubtitle">Fill out the form below and I'll get back to you as soon as possible.</p>
                         </div>
                         <form class="contact-form" onsubmit="handleFormSubmit(event)">
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                                    <label for="name" data-i18n="contact.name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name" data-i18n-placeholder="contact.namePlaceholder" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">Email</label>
+                                    <label for="email" data-i18n="contact.email">Email</label>
                                     <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                                <label for="subject" data-i18n="contact.subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What's this about?" data-i18n-placeholder="contact.subjectPlaceholder" required>
                             </div>
                             <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                                <label for="message" data-i18n="contact.message">Message</label>
+                                <textarea id="message" name="message" placeholder="Tell me about your project..." data-i18n-placeholder="contact.messagePlaceholder" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary btn-full">
                                 <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
                                     <line x1="22" y1="2" x2="11" y2="13"/>
                                     <polygon points="22,2 15,22 11,13 2,9 22,2"/>
                                 </svg>
-                                Send Message
+                                <span data-i18n="contact.sendMessage">Send Message</span>
                             </button>
                         </form>
                     </div>
@@ -494,8 +492,8 @@
                     <div class="contact-info">
                         <div class="contact-info-card">
                             <div class="contact-info-header">
-                                <h3>Contact Information</h3>
-                                <p>Feel free to reach out through any of these channels.</p>
+                                <h3 data-i18n="contact.infoTitle">Contact Information</h3>
+                                <p data-i18n="contact.infoSubtitle">Feel free to reach out through any of these channels.</p>
                             </div>
                             <div class="contact-methods">
                                 <div class="contact-method">
@@ -504,7 +502,7 @@
                                         <polyline points="22,6 12,13 2,6"/>
                                     </svg>
                                     <div>
-                                        <p class="contact-label">Email</p>
+                                        <p class="contact-label" data-i18n="contact.email">Email</p>
                                         <a href="mailto:fadillahnirmala@gmail.com">fadillahnirmala@gmail.com</a>
                                     </div>
                                 </div>
@@ -513,7 +511,7 @@
                                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                                     </svg>
                                     <div>
-                                        <p class="contact-label">Phone</p>
+                                        <p class="contact-label" data-i18n="contact.phone">Phone</p>
                                         <a href="tel:+6285658342013">+62 (856) 5834-2013</a>
                                     </div>
                                 </div>
@@ -523,7 +521,7 @@
                                         <circle cx="12" cy="10" r="3"/>
                                     </svg>
                                     <div>
-                                        <p class="contact-label">Location</p>
+                                        <p class="contact-label" data-i18n="about.statLocation">Location</p>
                                         <p>Bandar Lampung, Lampung</p>
                                     </div>
                                 </div>
@@ -532,8 +530,8 @@
 
                         <div class="social-card">
                             <div class="social-header">
-                                <h3>Follow Me</h3>
-                                <p>Connect with me on social media and stay updated with my latest work.</p>
+                                <h3 data-i18n="contact.followTitle">Follow Me</h3>
+                                <p data-i18n="contact.followSubtitle">Connect with me on social media and stay updated with my latest work.</p>
                             </div>
                             <div class="social-buttons">
                                 <a href="https://github.com/fadillahnirmala/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn-outline">
@@ -556,15 +554,15 @@
 
                         <div class="cta-card">
                             <div class="cta-header">
-                                <h3>Let's Work Together</h3>
+                                <h3 data-i18n="contact.ctaTitle">Let's Work Together</h3>
                             </div>
-                            <p>I'm currently available for freelance projects and full-time opportunities. Whether you need a simple website or a complex web application, I'm here to help.</p>
+                            <p data-i18n="contact.ctaText">I'm currently available for freelance projects and full-time opportunities. Whether you need a simple website or a complex web application, I'm here to help.</p>
                             <a href="mailto:fadillahnirmala@gmail.com" class="btn btn-primary">
                                 <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                                     <polyline points="22,6 12,13 2,6"/>
                                 </svg>
-                                Start a Project
+                                <span data-i18n="contact.startProject">Start a Project</span>
                             </a>
                         </div>
                     </div>
@@ -579,7 +577,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3>Nirmala Nurfadillah</h3>
-                    <p>Full Stack Developer passionate about creating exceptional digital experiences. Let's build something amazing together.</p>
+                    <p data-i18n="footer.brandText">Full Stack Developer passionate about creating exceptional digital experiences. Let's build something amazing together.</p>
                     <div class="footer-social">
                         <a href="https://github.com/fadillahnirmala/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
                             <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
@@ -601,18 +599,18 @@
                 </div>
 
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
+                    <h4 data-i18n="footer.quickLinks">Quick Links</h4>
                     <ul>
-                        <li><button onclick="scrollToSection('about')">About</button></li>
-                        <li><button onclick="scrollToSection('skills')">Skills</button></li>
-                        <li><button onclick="scrollToSection('projects')">Projects</button></li>
-                        <li><button onclick="scrollToSection('experience')">Experience</button></li>
-                        <li><button onclick="scrollToSection('contact')">Contact</button></li>
+                        <li><button onclick="scrollToSection('about')" data-i18n="nav.about">About</button></li>
+                        <li><button onclick="scrollToSection('skills')" data-i18n="nav.skills">Skills</button></li>
+                        <li><button onclick="scrollToSection('projects')" data-i18n="nav.projects">Projects</button></li>
+                        <li><button onclick="scrollToSection('experience')" data-i18n="nav.experience">Experience</button></li>
+                        <li><button onclick="scrollToSection('contact')" data-i18n="nav.contact">Contact</button></li>
                     </ul>
                 </div>
 
                 <div class="footer-contact">
-                    <h4>Get In Touch</h4>
+                    <h4 data-i18n="contact.title">Get In Touch</h4>
                     <div class="footer-contact-info">
                         <p><a href="mailto:fadillahnirmala@gmail.com">fadillahnirmala@gmail.com</a></p>
                         <p><a href="tel:+6285658342013">+62 (856) 5834-2013</a></p>
@@ -623,9 +621,9 @@
 
             <div class="footer-bottom">
                 <div class="footer-bottom-content">
-                    <p>&copy; <span id="currentYear"></span> Nirmala Nurfadillah. All rights reserved.</p>
+                    <p><span data-i18n="footer.copyrightPrefix">&copy;</span> <span id="currentYear"></span> Nirmala Nurfadillah. <span data-i18n="footer.rightsReserved">All rights reserved.</span></p>
                     <p class="footer-love">
-                        Made with <span class="heart">❤️</span> and lots of coffee
+                        <span data-i18n="footer.madeWith">Made with</span> <span class="heart">❤️</span> <span data-i18n="footer.andCoffee">and lots of coffee</span>
                     </p>
                 </div>
             </div>
@@ -633,6 +631,228 @@
     </footer>
 
     <script>
+        // ===== Translations (EN / ID) =====
+        const translations = {
+            en: {
+                "nav.about": "About",
+                "nav.skills": "Skills",
+                "nav.projects": "Projects",
+                "nav.experience": "Experience",
+                "nav.contact": "Contact",
+
+                "hero.greeting": "Hello, I'm",
+                "hero.role": "Student",
+                "hero.description": "A Computer Science student at Universitas Teknokrat Indonesia who is dedicated to software development and digital technology. Possesses a strong understanding of data structures, programming logic, and system design, with a special interest in web development and database management. Is always enthusiastic about learning new frameworks and committed to creating useful digital solutions through a clean code approach and consistent learning.",
+                "hero.viewWork": "View My Work",
+                "hero.getInTouch": "Get In Touch",
+
+                "about.title": "About Me",
+                "about.subtitle": "Get to know more about my background, experience, and what drives my passion for development.",
+                "about.storyTitle": "My Story",
+                "about.story1": "I am a student in the Computer Science program at Universitas Teknokrat Indonesia who is passionate about software development and digital technology. My academic journey on campus has strengthened my fundamental understanding through in-depth exploration of data structures, programming logic, and efficient system design.",
+                "about.story2": "I have a particular interest in web development and database management, and I am always eager to explore new tools and frameworks.",
+                "about.story3": "I believe that consistent learning, structured coding, and a thorough understanding of concepts are essential foundations for creating useful digital solutions.",
+                "about.interestsTitle": "Interests & Passions",
+                "about.tag1": "Web Development",
+                "about.tag2": "Data Structure & Algorithm",
+                "about.tag3": "Data Science",
+                "about.tag4": "Data Visualization",
+                "about.tag5": "UI/UX Design",
+                "about.tag6": "Cloud Computing",
+                "about.tag7": "Database System",
+                "about.statProjects": "Projects Completed",
+                "about.statLocation": "Location",
+
+                "skills.title": "Skills & Expertise",
+                "skills.subtitle": "Here are the technologies and tools I use to bring ideas to life.",
+                "skills.frontend": "Frontend Development",
+                "skills.backend": "Backend Development",
+                "skills.tools": "Tools & Technologies",
+
+                "projects.title": "Featured Projects",
+                "projects.subtitle": "A showcase of my recent work and the technologies I've used to solve real-world problems.",
+                "projects.liveDemo": "Live Demo",
+                "projects.code": "Code",
+                "projects.guessNumberDesc": "A simple data structure game designed to sharpen our logical thinking skills by guessing a secret number as efficiently as possible in order to be the best",
+                "projects.viewAll": "View All Projects on GitHub",
+
+                "education.title": "Education",
+                "education.subtitle": "My educational background that shaped my expertise.",
+                "education.columnTitle": "Education & Certifications",
+                "education.item1.title": "Informatics",
+                "education.item1.date": "2025 - now",
+                "education.item1.achievement": "On Going Study (now at 3 semesters)",
+                "education.item2.title": "High School Graduated in Social Science",
+                "education.item2.achievement": "Top 3 Graduated Student",
+                "education.item3.title": "Top Student, Memorized Selected Surahs",
+                "education.item4.title": "2nd Best Al-Barzanji",
+                "education.item5.title": "2nd Best Al-Barzanji",
+                "education.certLevel": "Schools Level Certification",
+
+                "contact.title": "Get In Touch",
+                "contact.subtitle": "Have a project in mind or want to collaborate? I'd love to hear from you. Let's create something amazing together.",
+                "contact.formTitle": "Send me a message",
+                "contact.formSubtitle": "Fill out the form below and I'll get back to you as soon as possible.",
+                "contact.name": "Name",
+                "contact.namePlaceholder": "Your name",
+                "contact.email": "Email",
+                "contact.subject": "Subject",
+                "contact.subjectPlaceholder": "What's this about?",
+                "contact.message": "Message",
+                "contact.messagePlaceholder": "Tell me about your project...",
+                "contact.sendMessage": "Send Message",
+                "contact.infoTitle": "Contact Information",
+                "contact.infoSubtitle": "Feel free to reach out through any of these channels.",
+                "contact.phone": "Phone",
+                "contact.followTitle": "Follow Me",
+                "contact.followSubtitle": "Connect with me on social media and stay updated with my latest work.",
+                "contact.ctaTitle": "Let's Work Together",
+                "contact.ctaText": "I'm currently available for freelance projects and full-time opportunities. Whether you need a simple website or a complex web application, I'm here to help.",
+                "contact.startProject": "Start a Project",
+
+                "footer.brandText": "Full Stack Developer passionate about creating exceptional digital experiences. Let's build something amazing together.",
+                "footer.quickLinks": "Quick Links",
+                "footer.copyrightPrefix": "\u00A9",
+                "footer.rightsReserved": "All rights reserved.",
+                "footer.madeWith": "Made with",
+                "footer.andCoffee": "and lots of coffee",
+
+                "form.thankYou": "Thank you for your message! I'll get back to you soon."
+            },
+            id: {
+                "nav.about": "Tentang",
+                "nav.skills": "Keahlian",
+                "nav.projects": "Proyek",
+                "nav.experience": "Pendidikan",
+                "nav.contact": "Kontak",
+
+                "hero.greeting": "Halo, saya",
+                "hero.role": "Mahasiswa",
+                "hero.description": "Mahasiswa Ilmu Komputer di Universitas Teknokrat Indonesia yang berdedikasi pada pengembangan perangkat lunak dan teknologi digital. Memiliki pemahaman yang kuat tentang struktur data, logika pemrograman, dan desain sistem, dengan minat khusus pada pengembangan web dan manajemen basis data. Selalu antusias mempelajari framework baru dan berkomitmen menciptakan solusi digital yang bermanfaat melalui pendekatan clean code dan pembelajaran yang konsisten.",
+                "hero.viewWork": "Lihat Karya Saya",
+                "hero.getInTouch": "Hubungi Saya",
+
+                "about.title": "Tentang Saya",
+                "about.subtitle": "Kenali lebih jauh latar belakang, pengalaman, dan apa yang mendorong passion saya dalam pengembangan perangkat lunak.",
+                "about.storyTitle": "Cerita Saya",
+                "about.story1": "Saya adalah mahasiswa program studi Ilmu Komputer di Universitas Teknokrat Indonesia yang bersemangat dalam pengembangan perangkat lunak dan teknologi digital. Perjalanan akademik saya di kampus telah memperkuat pemahaman dasar saya melalui eksplorasi mendalam terhadap struktur data, logika pemrograman, dan desain sistem yang efisien.",
+                "about.story2": "Saya memiliki minat khusus pada pengembangan web dan manajemen basis data, serta selalu antusias mengeksplorasi tools dan framework baru.",
+                "about.story3": "Saya percaya bahwa pembelajaran yang konsisten, penulisan kode yang terstruktur, dan pemahaman konsep yang mendalam adalah fondasi penting untuk menciptakan solusi digital yang bermanfaat.",
+                "about.interestsTitle": "Minat & Ketertarikan",
+                "about.tag1": "Pengembangan Web",
+                "about.tag2": "Struktur Data & Algoritma",
+                "about.tag3": "Data Science",
+                "about.tag4": "Visualisasi Data",
+                "about.tag5": "Desain UI/UX",
+                "about.tag6": "Cloud Computing",
+                "about.tag7": "Sistem Basis Data",
+                "about.statProjects": "Proyek Selesai",
+                "about.statLocation": "Lokasi",
+
+                "skills.title": "Keahlian & Kompetensi",
+                "skills.subtitle": "Berikut adalah teknologi dan tools yang saya gunakan untuk mewujudkan ide.",
+                "skills.frontend": "Pengembangan Frontend",
+                "skills.backend": "Pengembangan Backend",
+                "skills.tools": "Tools & Teknologi",
+
+                "projects.title": "Proyek Unggulan",
+                "projects.subtitle": "Kumpulan karya terbaru saya beserta teknologi yang digunakan untuk menyelesaikan permasalahan nyata.",
+                "projects.liveDemo": "Demo Langsung",
+                "projects.code": "Kode",
+                "projects.guessNumberDesc": "Sebuah permainan struktur data sederhana yang dirancang untuk mengasah kemampuan berpikir logis dengan menebak angka rahasia seefisien mungkin agar menjadi yang terbaik",
+                "projects.viewAll": "Lihat Semua Proyek di GitHub",
+
+                "education.title": "Pendidikan",
+                "education.subtitle": "Latar belakang pendidikan saya yang membentuk keahlian saya.",
+                "education.columnTitle": "Pendidikan & Sertifikasi",
+                "education.item1.title": "Informatika",
+                "education.item1.date": "2025 - sekarang",
+                "education.item1.achievement": "Sedang Menempuh Studi (saat ini semester 3)",
+                "education.item2.title": "Lulusan SMA Jurusan Ilmu Sosial",
+                "education.item2.achievement": "Lulusan Terbaik ke-3",
+                "education.item3.title": "Siswa Berprestasi, Penghafal Surah Pilihan",
+                "education.item4.title": "Juara 2 Al-Barzanji",
+                "education.item5.title": "Juara 2 Al-Barzanji",
+                "education.certLevel": "Sertifikasi Tingkat Sekolah",
+
+                "contact.title": "Hubungi Saya",
+                "contact.subtitle": "Punya proyek yang ingin didiskusikan atau ingin berkolaborasi? Saya senang mendengar dari Anda. Mari ciptakan sesuatu yang luar biasa bersama.",
+                "contact.formTitle": "Kirim pesan untuk saya",
+                "contact.formSubtitle": "Isi formulir di bawah ini dan saya akan segera menghubungi Anda kembali.",
+                "contact.name": "Nama",
+                "contact.namePlaceholder": "Nama Anda",
+                "contact.email": "Email",
+                "contact.subject": "Subjek",
+                "contact.subjectPlaceholder": "Ini tentang apa?",
+                "contact.message": "Pesan",
+                "contact.messagePlaceholder": "Ceritakan tentang proyek Anda...",
+                "contact.sendMessage": "Kirim Pesan",
+                "contact.infoTitle": "Informasi Kontak",
+                "contact.infoSubtitle": "Jangan ragu untuk menghubungi saya melalui salah satu kanal berikut.",
+                "contact.phone": "Telepon",
+                "contact.followTitle": "Ikuti Saya",
+                "contact.followSubtitle": "Terhubung dengan saya di media sosial dan dapatkan info terbaru tentang karya saya.",
+                "contact.ctaTitle": "Mari Bekerja Sama",
+                "contact.ctaText": "Saat ini saya tersedia untuk proyek freelance maupun kesempatan kerja penuh waktu. Baik Anda butuh website sederhana maupun aplikasi web yang kompleks, saya siap membantu.",
+                "contact.startProject": "Mulai Proyek",
+
+                "footer.brandText": "Full Stack Developer yang bersemangat menciptakan pengalaman digital yang luar biasa. Mari membangun sesuatu yang luar biasa bersama.",
+                "footer.quickLinks": "Tautan Cepat",
+                "footer.copyrightPrefix": "\u00A9",
+                "footer.rightsReserved": "Seluruh hak cipta dilindungi.",
+                "footer.madeWith": "Dibuat dengan",
+                "footer.andCoffee": "dan banyak kopi",
+
+                "form.thankYou": "Terima kasih atas pesan Anda! Saya akan segera menghubungi Anda kembali."
+            }
+        };
+
+        // Determine initial language: saved preference, else browser language, else English
+        function getInitialLanguage() {
+            try {
+                const saved = localStorage.getItem('site-lang');
+                if (saved === 'en' || saved === 'id') return saved;
+            } catch (e) {}
+            const browserLang = (navigator.language || 'en').toLowerCase();
+            return browserLang.startsWith('id') ? 'id' : 'en';
+        }
+
+        let currentLang = getInitialLanguage();
+
+        function applyTranslations(lang) {
+            const dict = translations[lang] || translations.en;
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key] !== undefined) {
+                    el.textContent = dict[key];
+                }
+            });
+
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (dict[key] !== undefined) {
+                    el.setAttribute('placeholder', dict[key]);
+                }
+            });
+
+            document.documentElement.setAttribute('lang', lang);
+
+            const langLabel = document.getElementById('langLabel');
+            if (langLabel) {
+                langLabel.textContent = lang === 'en' ? 'ID' : 'EN';
+            }
+
+            try {
+                localStorage.setItem('site-lang', lang);
+            } catch (e) {}
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'id' : 'en';
+            applyTranslations(currentLang);
+        }
+
         // Set current year
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
@@ -695,7 +915,8 @@
             const data = Object.fromEntries(formData);
             
             console.log('Form submitted:', data);
-            alert("Thank you for your message! I'll get back to you soon.");
+            const dict = translations[currentLang] || translations.en;
+            alert(dict['form.thankYou']);
             event.target.reset();
         }
 
@@ -712,224 +933,9 @@
                 sunIcon.style.display = 'none';
                 moonIcon.style.display = 'block';
             }
-        });
 
-        // Kamus terjemahan
-        const i18n = {
-            id: {
-            "hero.name": "Nirmala Nurfadillah",
-            "hero.role": "Mahasiswa",
-            "hero.summary": "Mahasiswa Ilmu Komputer di Universitas Teknokrat Indonesia yang berdedikasi pada pengembangan perangkat lunak dan teknologi digital. Memiliki pemahaman yang kuat tentang struktur data, logika pemrograman, dan desain sistem, dengan ketertarikan khusus pada pengembangan web dan manajemen basis data. Selalu antusias mempelajari framework baru dan berkomitmen menciptakan solusi digital bermanfaat melalui clean code dan pembelajaran konsisten.",
-            "cta.viewWork": "Lihat Karya",
-            "cta.contact": "Hubungi Saya",
-
-            "about.title": "Tentang Saya",
-            "about.storyTitle": "Perjalanan Saya",
-            "about.storyBody": "Saya adalah mahasiswa Program Studi Informatika di Universitas Teknokrat Indonesia yang antusias pada pengembangan perangkat lunak dan teknologi digital. Perjalanan akademik saya memperkuat fondasi melalui eksplorasi mendalam struktur data, logika pemrograman, dan perancangan sistem yang efisien. Saya memiliki ketertarikan pada pengembangan web dan manajemen basis data, serta senang mengeksplorasi tools dan framework baru. Saya percaya belajar konsisten, penulisan kode yang terstruktur, dan pemahaman konsep yang menyeluruh adalah dasar untuk menciptakan solusi digital yang bermanfaat.",
-            "about.interestsTitle": "Minat & Ketertarikan",
-            "about.interests.webdev": "Pengembangan Web",
-            "about.interests.dsa": "Struktur Data & Algoritma",
-            "about.interests.ds": "Data Science",
-            "about.interests.viz": "Visualisasi Data",
-            "about.interests.uiux": "Desain UI/UX",
-            "about.interests.cloud": "Komputasi Awan",
-            "about.interests.db": "Sistem Basis Data",
-
-            "skills.title": "Keahlian",
-            "skills.frontend": "Pengembangan Frontend",
-            "skills.html": "HTML",
-            "skills.css": "CSS",
-            "skills.backend": "Pengembangan Backend",
-            "skills.python": "Python",
-            "skills.tools": "Tools & Teknologi",
-            "skills.vscode": "VS Code",
-            "skills.git": "Git",
-            "skills.colab": "Google Colab",
-
-            "projects.title": "Proyek Unggulan",
-            "projects.guessNumber.desc": "Game struktur data sederhana untuk melatih logika dengan menebak angka rahasia seefisien mungkin agar menjadi yang terbaik.",
-            "projects.liveDemo": "Demo",
-            "projects.code": "Kode",
-            "projects.viewAll": "Lihat Semua Proyek di GitHub",
-
-            "education.title": "Pendidikan",
-            "education.sectionTitle": "Pendidikan & Sertifikasi",
-            "education.degree1.title": "Informatika",
-            "education.degree1.school": "Universitas Teknokrat Indonesia, Lampung",
-            "education.degree1.meta": "2025 - sekarang",
-            "education.degree1.note": "Sedang Studi (semester 3)",
-
-            "contact.title": "Kontak",
-            "contact.lead": "Punya proyek atau ingin kolaborasi? Saya senang berdiskusi. Mari ciptakan sesuatu yang keren bersama.",
-            "contact.formTitle": "Kirim Pesan",
-            "contact.form.name": "Nama",
-            "contact.form.email": "Email",
-            "contact.form.subject": "Subjek",
-            "contact.form.message": "Pesan",
-            "contact.form.send": "Kirim",
-
-            "contact.infoTitle": "Informasi Kontak",
-            "contact.info.email": "Email",
-            "contact.info.phone": "Telepon",
-            "contact.info.location": "Lokasi",
-
-            "social.follow": "Ikuti Saya",
-
-            "footer.hireTitle": "Ayo Bekerja Sama",
-            "footer.hireBody": "Saya tersedia untuk proyek freelance dan peluang full-time. Baik website sederhana maupun aplikasi kompleks, saya siap membantu.",
-            "footer.startProject": "Mulai Proyek",
-            "footer.name": "Nirmala Nurfadillah",
-            "footer.tagline": "Full Stack Developer yang antusias membangun pengalaman digital yang hebat.",
-            "footer.quickLinks": "Tautan Cepat",
-            "footer.contact": "Kontak",
-            "footer.location": "Bandar Lampung, Lampung",
-            "footer.copyright": "© 2026 Nirmala Nurfadillah. Seluruh hak cipta.",
-            "footer.madeWith": "Dibuat dengan ❤️ dan kopi."
-            ,
-            "nav.about": "Tentang",
-            "nav.skills": "Keahlian",
-            "nav.projects": "Proyek",
-            "nav.experience": "Pengalaman",
-            "nav.contact": "Kontak"
-            },
-            en: {
-            "hero.name": "Nirmala Nurfadillah",
-            "hero.role": "Student",
-            "hero.summary": "A Computer Science student at Universitas Teknokrat Indonesia dedicated to software development and digital technology. Strong understanding of data structures, programming logic, and system design, with a special interest in web development and database management. Always eager to learn new frameworks and committed to building useful digital solutions through clean code and consistent learning.",
-            "cta.viewWork": "View My Work",
-            "cta.contact": "Get In Touch",
-
-            "about.title": "About Me",
-            "about.storyTitle": "My Story",
-            "about.storyBody": "I am a student in the Informatics program at Universitas Teknokrat Indonesia, passionate about software development and digital technology. My academic journey has strengthened fundamentals through in-depth exploration of data structures, programming logic, and efficient system design. I’m particularly interested in web development and database management, and I enjoy exploring new tools and frameworks. I believe consistent learning, structured coding, and thorough conceptual understanding are essential to creating useful digital solutions.",
-            "about.interestsTitle": "Interests & Passions",
-            "about.interests.webdev": "Web Development",
-            "about.interests.dsa": "Data Structure & Algorithm",
-            "about.interests.ds": "Data Science",
-            "about.interests.viz": "Data Visualization",
-            "about.interests.uiux": "UI/UX Design",
-            "about.interests.cloud": "Cloud Computing",
-            "about.interests.db": "Database System",
-
-            "skills.title": "Skills & Expertise",
-            "skills.frontend": "Frontend Development",
-            "skills.html": "HTML",
-            "skills.css": "CSS",
-            "skills.backend": "Backend Development",
-            "skills.python": "Python",
-            "skills.tools": "Tools & Technologies",
-            "skills.vscode": "VS Code",
-            "skills.git": "Git",
-            "skills.colab": "Google Colab",
-
-            "projects.title": "Featured Projects",
-            "projects.guessNumber.desc": "A simple data structure game to sharpen logic by guessing a secret number as efficiently as possible.",
-            "projects.liveDemo": "Live Demo",
-            "projects.code": "Code",
-            "projects.viewAll": "View All Projects on GitHub",
-
-            "education.title": "Education",
-            "education.sectionTitle": "Education & Certifications",
-            "education.degree1.title": "Informatics",
-            "education.degree1.school": "Teknokrat University of Indonesia, Lampung",
-            "education.degree1.meta": "2025 - now",
-            "education.degree1.note": "On Going Study (now at 3 semesters)",
-
-            "contact.title": "Get In Touch",
-            "contact.lead": "Have a project in mind or want to collaborate? I’d love to hear from you. Let’s create something amazing together.",
-            "contact.formTitle": "Send me a message",
-            "contact.form.name": "Name",
-            "contact.form.email": "Email",
-            "contact.form.subject": "Subject",
-            "contact.form.message": "Message",
-            "contact.form.send": "Send",
-
-            "contact.infoTitle": "Contact Information",
-            "contact.info.email": "Email",
-            "contact.info.phone": "Phone",
-            "contact.info.location": "Location",
-
-            "social.follow": "Follow Me",
-
-            "footer.hireTitle": "Let's Work Together",
-            "footer.hireBody": "I’m available for freelance projects and full-time opportunities. Whether you need a simple website or a complex web app, I’m here to help.",
-            "footer.startProject": "Start a Project",
-            "footer.name": "Nirmala Nurfadillah",
-            "footer.tagline": "Full Stack Developer passionate about creating exceptional digital experiences.",
-            "footer.quickLinks": "Quick Links",
-            "footer.contact": "Get In Touch",
-            "footer.location": "Bandar Lampung, Lampung",
-            "footer.copyright": "© 2026 Nirmala Nurfadillah. All rights reserved.",
-            "footer.madeWith": "Made with ❤️ and lots of coffee.",
-            "nav.about": "About",
-            "nav.skills": "Skills",
-            "nav.projects": "Projects",
-            "nav.experience": "Experience",
-            "nav.contact": "Contact"
-            }
-        };
-
-        // Util: ganti teks sesuai bahasa
-        function applyTranslations(lang) {
-            const dict = i18n[lang] || i18n.id;
-            document.documentElement.setAttribute('lang', lang); // penting untuk a11y/SEO
-
-            // Setel dropdown agar sinkron
-            const sel = document.getElementById('lang');
-            if (sel && sel.value !== lang) sel.value = lang;
-
-            // Isi semua elemen bertanda data-i18n
-            document.querySelectorAll('[data-i18n]').forEach(node => {
-            const key = node.getAttribute('data-i18n');
-            const text = dict[key];
-            if (typeof text === 'string') {
-                // Tentukan properti: placeholder vs text
-                if (node.tagName === 'INPUT' || node.tagName === 'TEXTAREA') {
-                if (node.hasAttribute('placeholder')) {
-                    node.setAttribute('placeholder', text);
-                } else {
-                    node.value = text; // jika memang isian default
-                }
-                } else if (node.tagName === 'A' && node.hasAttribute('title')) {
-                node.setAttribute('title', text);
-                node.textContent = text;
-                } else {
-                node.textContent = text;
-                }
-            }
-            });
-
-            // Simpan preferensi
-            try {
-            localStorage.setItem('pref-lang', lang);
-            } catch (e) {}
-        }
-
-        // Deteksi bahasa awal: dari localStorage, lalu dari browser, default ID
-        function detectInitialLang() {
-            try {
-            const saved = localStorage.getItem('pref-lang');
-            if (saved && i18n[saved]) return saved;
-            } catch (e) {}
-
-            const nav = (navigator.language || navigator.userLanguage || 'id').toLowerCase();
-            if (nav.startsWith('id')) return 'id';
-            if (nav.startsWith('en')) return 'en';
-            return 'id';
-        }
-
-        // Inisialisasi
-        document.addEventListener('DOMContentLoaded', () => {
-            const initial = detectInitialLang();
-            applyTranslations(initial);
-
-            const selector = document.getElementById('lang');
-            if (selector) {
-            selector.addEventListener('change', (e) => {
-                const lang = e.target.value;
-                applyTranslations(lang);
-            });
-            }
+            // Initialize language
+            applyTranslations(currentLang);
         });
     </script>
 </body>
